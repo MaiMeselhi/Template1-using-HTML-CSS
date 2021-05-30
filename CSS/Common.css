@@ -1,0 +1,124 @@
+
+/* common style
+1-opacity hover.
+2-header in each section.
+3-padding between each section.
+4-left to right hover
+5-up to down hover.
+6-container div
+7-over layer
+*/
+
+
+
+
+/*****************************common Styles************************/
+
+.container{
+    width: 80%;
+    margin: auto;
+
+}
+.clear
+{
+    clear:both; 
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: monoserrat,sans-serif;
+}
+
+:root{
+    --main-color: #6195ff;
+    --gray-color:#999;
+    --bg-color:#f9f9f9;
+    --white-color:#fff;
+}
+
+.opacity-hover{
+    transition:opacity 0.5s;
+}
+
+.opacity-hover:hover{
+    opacity: 0.6;
+}
+
+.ltr-effect,
+.utd-effect{
+    position: relative;
+}
+
+.ltr-effect:after,
+.utd-effect:after{
+    position: absolute;
+    content: "";
+    top:0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333;
+    z-index: -1;
+}
+
+.ltr-effect:after{
+ width: 0;
+ transition: width 0.5s;
+
+}
+
+.ltr-effect:hover:after{
+    width: 100%;
+
+}
+
+.utd-effect:after{
+    height: 0;
+    transition: height 0.5s;
+
+}
+
+.utd-effect:hover:after{
+   height: 100%;
+
+}
+
+.btn{
+
+    font-family: inherit;
+ 
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.padding-y{
+    padding: 120px 0;
+}
+
+
+.header-section{
+    text-align: center;
+   
+
+}
+
+.header-section .title-section{
+
+    font-size: 35px;
+    text-transform: capitalize;
+}
+
+
+.header-section .line
+{
+    display: block;
+    margin:0 auto 70px auto;
+    height: 5px;
+    width: 70px;
+    background-color:var(--main-color);
+}

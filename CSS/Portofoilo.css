@@ -1,0 +1,84 @@
+
+/****************************** Portofoilo section*********************/
+.Pportoflio-content{
+    background: #f9f9f9;
+    overflow: hidden;
+
+}
+
+
+.portoflio-item{
+    width: 30%;
+    float: left;
+    margin-bottom: 50px;
+    position: relative;
+    padding: 10px;
+}
+
+.portoflio-item .layer-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s,visibilty 0.5s;
+  
+
+}
+.portoflio-item:hover .layer-content{
+    opacity: 1;
+    visibility: visible;
+}
+
+.layer-content .layer-info{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:100%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+
+}
+
+
+.layer-content .catagory{
+    color: #6195ff;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.layer-content-title{
+    font-size: 20px;
+    color:white;
+    margin-bottom: 10px;;
+}
+
+.layer-content a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #6195ff;
+    
+}
+
+.portoflio-item:hover .layer-content .catagory,
+.portoflio-item:hover .layer-content-title,
+.portoflio-item:hover .layer-content a {
+    top:0;
+}
+ 
+.layer-content a i{
+    line-height: 40px;
+    color: white;
+}
+.portoflio-item.mg{
+    margin: 0 5%;
+}
+
+.portoflio-item img{
+    width: 100%;
+}
